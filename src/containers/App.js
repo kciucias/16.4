@@ -8,7 +8,7 @@ class App extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            data: []
+            data: [],
         };
     }
     addTodo(val){
@@ -26,8 +26,7 @@ class App extends React.Component {
     render() {
         return (
             <div className={style.TodoApp}>
-            	<Title title="Todo"/>
-                Tutaj pojawią się komponenty naszej aplikacji.
+            	<Title title="Todo Board" number = {this.state.data.length}/>
             </div>
         );
     }
